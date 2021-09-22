@@ -1,4 +1,4 @@
-conda env create -n conda-env -f env/environment.yml
+# conda env create -n conda-env -f env/environment.yml
 pip install -r env/requirements.txt
 python spacy -m en-core-web-sm
 
