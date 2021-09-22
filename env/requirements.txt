@@ -27,7 +27,7 @@ cytoolz==0.9.0.1
 decorator==4.4.2
 defusedxml==0.6.0
 dill==0.2.9
-en-core-web-sm==2.2.5
+# en-core-web-sm==2.2.5
 entrypoints==0.3
 es-core-news-sm==2.2.5
 filelock==3.0.12
