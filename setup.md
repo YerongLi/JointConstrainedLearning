@@ -1,7 +1,7 @@
 # conda env create -n conda-env -f env/environment.yml
 pip install -r env/requirements.txt
-python spacy -m en-core-web-sm
-
+pip install https://github.com/explosion/spacy-models/releases/download/en_core_web_sm-2.2.5/en_core_web_sm-2.2.5.tar.gz
+pip install https://github.com/explosion/spacy-models/releases/download/en_core_web_sm-2.2.5/es-core-news-sm==2.2.5.tar.gz
 mkdir rst_file
 mkdir model_params
 cd model_params
