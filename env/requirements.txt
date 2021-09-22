@@ -37,7 +37,8 @@ gensim==3.8.3
 google-auth==1.21.3
 google-auth-oauthlib==0.4.1
 grpcio==1.32.0
-gurobipy==8.1.1
+# gurobipy==8.1.1
+gurobipy
 h5py==2.10.0
 hyperopt==0.2.5
 idna==2.8
