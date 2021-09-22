@@ -30,6 +30,8 @@ mkdir MATRES_best
 cd ..
 ```
 ### Running experiments in the paper
+`python3 main.py gpu_3 batch_16 0920_0.rst epoch_40 MATRES add_loss_0 finetune_0 MAX_EVALS_50 debugging_0`
+
 `python3 main.py <DEVICE_ID> <BATCH_SIZE> <RESULT_FILE> <EPOCH> <SETTING> <LOSS> <FINETUNE> <MAX_EVALS> <DEBUGGING>`
 
 `<DEVICE_ID>`: choose from "gpu_0", "gpu_1", "gpu_5,6,7", etc.
