@@ -31,7 +31,7 @@ def data(dataset, debugging, downsample, batch_size):
         #       HiEve Dataset
         # ========================
         dir_name = "./hievents_v2/processed/"
-        onlyfiles = [f for f in listdir(dir_name) if isfile(join(dir_name, f)) and f[-4:] == "tsvx"]
+        onlyfiles = [f for f in listdir(dir_name) if isfile(join(dir_name, f)) and f[-4:] == "tsvx"][:50]
         train_range = []
         valid_range = []
         test_range = []

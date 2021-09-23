@@ -1,1 +1,1 @@
- python3 main.py gpu_2,3 batch_16 0118_0.rst epoch_40 MATRES add_loss_2 finetune_1 MAX_EVALS_50 debugging_0
+ python3 main.py gpu_2,3 batch_16 0118_0.rst epoch_40 MATRES add_loss_0 finetune_1 MAX_EVALS_50 debugging_0
