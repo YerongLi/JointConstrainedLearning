@@ -97,8 +97,10 @@ def objective(params):
     start = timer()
     train_dataloader, valid_dataloader_MATRES, test_dataloader_MATRES, valid_dataloader_HIEVE, test_dataloader_HIEVE, num_classes = data(dataset, debugging, params['downsample'], batch_size)
     if finetune:
+        print('roberta_mlp')
         model = roberta_mlp(num_classes, dataset, add_loss, params)
     else:
+        print('BiLSTM_MLP')
         model = BiLSTM_MLP(num_classes, dataset, add_loss, params)
     model.to(cuda)
     model.zero_grad()
