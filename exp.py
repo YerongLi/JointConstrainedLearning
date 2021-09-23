@@ -50,9 +50,11 @@ class exp:
         if not self.finetune:
             self.RoBERTaModel = RobertaModel.from_pretrained(self.roberta_size).to(self.cuda)
         if self.roberta_size == 'roberta-base':
-            self.roberta_dim = 768
+            # self.roberta_dim = 768
+            self.roberta_dim = 8
         else:
-            self.roberta_dim = 1024
+            # self.roberta_dim = 1024
+            self.roberta_dim = 12
             
         self.MATRES_best_micro_F1 = -0.000001
         self.MATRES_best_cm = []
