@@ -178,7 +178,8 @@ dependencies:
     - simple-http-server==0.3.1
     - sklearn==0.0
     - smart-open==4.1.2
-    - spacy==2.2.4
+    # - spacy==2.2.4
+    - spacy
     - srsly==1.0.2
     - stanza==1.1.1
     - tempora==4.0.0
