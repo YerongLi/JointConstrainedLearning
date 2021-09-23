@@ -57,11 +57,14 @@ if debugging:
         'lambda_transT': 1.0,
         'lambda_transH': 1.0,
         'lambda_cross': 1.0,
-        'MLP_size': 512, #hp.quniform('MLP_size', 128, 1024, 1),
+        # 'MLP_size': 512, #hp.quniform('MLP_size', 128, 1024, 1),
+        'MLP_size': 12, #hp.quniform('MLP_size', 128, 1024, 1),
         'num_layers': 1, #hp.quniform('num_layers', 1, 4, 1),
-        'lstm_hidden_size': 256, #hp.quniform('lstm_hidden_size', 128, 512, 1),
-        'roberta_hidden_size': 1024, #hp.quniform('roberta_hidden_size', 768, 1024, 1),
-        'lstm_input_size': 768, #hp.quniform('lstm_input_size', 768, 1024, 1), # pre-trained word embeddings, roberta-base
+        # 'lstm_hidden_size': 256, #hp.quniform('lstm_hidden_size', 128, 512, 1),
+        'lstm_hidden_size': 6, #hp.quniform('lstm_hidden_size', 128, 512, 1),
+        # 'roberta_hidden_size': 1024, #hp.quniform('roberta_hidden_size', 768, 1024, 1),
+        'roberta_hidden_size': 24, #hp.quniform('roberta_hidden_size', 768, 1024, 1),
+        'lstm_input_size': 8, #hp.quniform('lstm_input_size', 768, 1024, 1), # pre-trained word embeddings, roberta-base
     }
     with open("config/" + rst_file_name.replace("rst", "json"), 'w') as config_file:
         json.dump(space, config_file)
