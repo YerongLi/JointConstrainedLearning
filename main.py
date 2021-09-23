@@ -164,7 +164,7 @@ of_connection.close()
 # Global variable
 global  ITERATION
 ITERATION = 0
-
+torch.cuda.empty_cache()
 # Run optimization
 best = fmin(fn = objective, space = space, algo = tpe.suggest, 
             max_evals = MAX_EVALS, trials = bayes_trials, rstate = np.random.RandomState(50))
