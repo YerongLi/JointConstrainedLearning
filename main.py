@@ -26,7 +26,8 @@ if len(sys.argv) > 1:
     gpu_num, batch_size, rst_file_name, epochs, dataset, add_loss, finetune, MAX_EVALS, debugging = sys.argv[1][4:], int(sys.argv[2][6:]), sys.argv[3], int(sys.argv[4][6:]), sys.argv[5], int(sys.argv[6][9:]), int(sys.argv[7][9:]), int(sys.argv[8][10:]), int(sys.argv[9][10:])
     
 os.environ["CUDA_VISIBLE_DEVICES"] = gpu_num
-cuda = torch.device('cuda')
+# cuda = torch.device('cuda')
+cuda = torch.device('cpu')
 writer = SummaryWriter(comment=rst_file_name.replace(".rst", ""))
 
 ### restore model ###
